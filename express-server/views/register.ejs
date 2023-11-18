@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form" onsubmit="return validateFormRes()" action="/register" method="POST">
+            <p>
+                 <input type="text" id="name", name="name" autocomplete="off" required placeholder="name">
+            </p>
+            <p>
+                <input type="email" id="email", name="email" autocomplete="off" required placeholder="Email">
+            </p>
+            <p>
+                <input type="password" id="password", name="password" autocomplete="off" required placeholder="password">
+            </p>
+            <button>Create</button>
+            <p class="message">Already registered? <a href="/login">Sign In</a></p>
+          </form>
+        </div>
+      </div>
+
+</body>
+</html>

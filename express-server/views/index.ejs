@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {background-color: rgb(141,194,111); }
+        header button, .logout {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 130px;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+            margin-right: 20px;
+            
+        }
+        header button {
+            float: right;
+            margin-top: -55px;
+        }
+    header button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi <%= name %></h1>
+    <form action="/logout?_method=DELETE" method="POST">
+        <button type="submit" class="logout">Logout</button>
+    </form>
+    <header><button><a href="scoreboard.html">Scoreboard</a></button></header>
+
+    <canvas id="canvas1"></canvas>
+
+
+    <img id="playerIdle" src = "assets/Sprites/Idle.png">
+    <img id="playerJump" src = "assets/Sprites/Jump.png">
+    <img id="playerFall" src = "assets/Sprites/Fall.png">
+    <img id="playerHit" src = "assets/Sprites/Take-Hit.png">
+    <img id="playerRun" src = "assets/Sprites/Run.png">
+    <img id="playerAttack1" src = "assets/Sprites/Attack1.png">
+    <img id="playerAttack2" src = "assets/Sprites/Attack2.png">
+    <img id="platform" src = "assets/Background/platform.png">
+    <img id="layer1" src = "assets/Background/Layer-1.png">
+    <img id="layer2" src = "assets/Background/layer-2.png">
+    <img id="layer3" src = "assets/Background/layer-3.png">
+    <img id="layer4" src = "assets/Background/layer-4.png">
+    <img id="layer5" src = "assets/Background/layer-5.png">
+    <img id="layer6" src = "assets/Background/layer-6.png">
+    <img id="layer7" src = "assets/Background/layer-7.png">
+    <img id="layer8" src = "assets/Background/layer-8.png">
+    <img id="enemy_fly" src = "assets/Bat_Sprite_Sheet.png">
+    <img id="enemy_worm" src = "assets/skeleton.png">
+    <img id="enemy_plant" src = "assets/spike.png">
+    <img id="enemy_spider_big" src = "assets/enemy_spider_big.png">
+    <img id="fire" src = "assets/fire.png">
+    <img id="collisionAnimation" src = "assets/boom.png">
+    <img id="lives" src = "assets/heart.png">
+    <img id="pause" src = "assets/pause.png">
+    <img id="challenge" src = "assets/Question.png">
+    <img id="challengeImg" src = "assets/qs.png">
+    <img id="imgskl" src = "assets/skeletonImg.png">
+    <img id="imgspk" src = "assets/spikeImg.png">
+    <img id="imgbat" src = "assets/batImg.png">
+
+    <!--<iframe src="https://www.javhd.today" frameborder="0" height="576px" width="1024px" style="text-align: center;"></iframe>-->
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

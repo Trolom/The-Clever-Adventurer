@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);    
+}
+
+#canvas1 {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#playerIdle, #playerJump, #playerFall, #playerRun, #playerHit, #playerAttack1, #playerAttack2, #platform, #layer1, #layer2, #layer3, #layer4, #layer5, #layer6, #layer7, #layer8, #enemy_plant,#enemy_worm, #enemy_fly, #enemy_spider_big, #fire, #collisionAnimation, #lives, #pause, #challenge, #challengeImg, #imgskl, #imgspk, #imgbat {
+    display: none;
+}
+
+.selected {
+    background-color: #555555;
+    color: #ffffff;
+    border: 2px solid #555555;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(37, 94, 16, 0.676);
+    color: #080710;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px, 2px, 2px grey;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  input {
+    display: block;
+    height: 40px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    position: absolute;
+    left: 43%;
+    top: 43.2%;
+  }
+
+  ul {
+    margin: 0;
+    gap: 1rem;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    place-items: center;
+    flex-direction: column;   
+}
+li {
+    width: 400px;
+    text-align: center;
+    background-color: rgba(66, 138, 53, 0.603);
+    border-radius: 15px;
+    padding: 10px;
+}
+
